@@ -5,10 +5,14 @@
 
  You decide that your fitness tracking app should show the user what percentage of his/her goal has been achieved so far today. Declare a variable called `percentCompleted` and set it to 0. Do not explicity assign it a type.
  */
-
+var percentCompleted = 0.0;
 
 //:  Imagine that partway through the day a user has taken 3,467 steps out of the 10,000 step goal. This means he/she is 34.67% of the way to his/her goal. Assign 34.67 to `percentCompleted`. Does the code compile? Go back and explicity assign a type to `percentCompleted` that will allow the code to compile.
-
+let stepsGoal = 3_467.0;
+var stepCount = 10_000.0;
+percentCompleted = 100.0 * (stepsGoal / stepCount);
+print("Doesnt compile because it isnt a double")
+print(percentCompleted)
 
 /*:
  _Copyright © 2021 Apple Inc._
